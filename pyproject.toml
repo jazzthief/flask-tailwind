@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "flask-tailwind"
+version = "0.1.0"
+description = "A flask + Tailwind starter template"
+authors = ["jazzthief <mynameisyegor@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^2.0.3"
+Flask-Assets = "^2.0"
+Flask-SQLAlchemy = "^2.5.1"
+python-dotenv = "^0.19.2"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^4.0.1"
+safety = "^1.10.3"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
