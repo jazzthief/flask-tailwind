@@ -1,6 +1,6 @@
 # Flask + Tailwind template
 
-This serves as a template to `flask` projects using `poetry`, `npm` and `tailwindcss` with `postcss` preprocessor.
+This serves as a template to `flask` projects using `poetry`, `npm` and `tailwindcss` with `postcss` preprocessor. Environment variables are read from .env file in root directory.
 
 # Usage
 
