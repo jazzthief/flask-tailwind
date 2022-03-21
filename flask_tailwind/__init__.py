@@ -1,8 +1,8 @@
 import os
 
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
 from flask import render_template
+from models import db
 
 # from flask_assets import Environment, Bundle
 
@@ -28,8 +28,9 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    # db = SQLAlchemy(app)
     # assets = Environment()
+
+    db.init_app(app)
 
     register_blueprints(app)
     register_error_handlers(app)
