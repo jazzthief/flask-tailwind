@@ -2,8 +2,8 @@ import os
 
 from flask import Flask
 from flask import render_template
-from models import db
-
+from flask_tailwind.models import db
+from flask_migrate import Migrate
 # from flask_assets import Environment, Bundle
 
 __version__ = '0.1.0'
@@ -31,6 +31,7 @@ def create_app(test_config=None):
     # assets = Environment()
 
     db.init_app(app)
+    migrate = Migrate(app, db)
 
     register_blueprints(app)
     register_error_handlers(app)
